@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import './style.css'
+import '@styles/index.css'
 // @ts-ignore
 import App from './App.jsx'
 

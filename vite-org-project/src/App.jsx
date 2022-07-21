@@ -1,5 +1,5 @@
 import {defineComponent} from "vue";
-import  './style.css'
+import  '@styles/index.css'
 export default defineComponent({
     setup(){
         return ()=>{
