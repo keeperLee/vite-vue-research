@@ -2,6 +2,9 @@
   <div>
     <p>Has published books:</p>
     <span>{{ publishedBooksMessage }}</span>
+    <br>
+    <span>{{fullName}}</span>
+    <button @click="changeName">修改名字</button>
   </div>
 </template>
 
@@ -35,6 +38,24 @@ const publishedBooksMessage = computed(() => {
 })
 
 
+const firstName = ref('John')
+const lastName = ref('Doe')
+
+const fullName = computed({
+  // getter
+  get() {
+    return firstName.value + ' ' + lastName.value
+  },
+  // setter
+  set(newValue) {
+    // 注意：我们这里使用的是解构赋值语法
+    [firstName.value, lastName.value] = newValue.split(' ')
+  }
+})
+
+const changeName = () => {
+  fullName.value = 'li jian'
+}
 </script>
 
 <style scoped>
