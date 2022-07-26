@@ -3,7 +3,10 @@ import { shallowRef } from 'vue'
 import CompA from './CompA.vue'
 import CompB from './CompB.vue'
 
+
+
 const current = shallowRef(CompA)
+
 </script>
 
 <template>
