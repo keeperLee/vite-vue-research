@@ -1,7 +1,7 @@
 <template>
 <!--  <Child ref="child"/>-->
   <div class="btn-container">
-    <Transition name="slide-up">
+    <Transition name="slide-up" mode="out-in">
       <button v-if="docState === 'saved'"
               @click="docState = 'edited'">Edit</button>
       <button v-else-if="docState === 'edited'"
