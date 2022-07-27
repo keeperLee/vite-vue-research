@@ -4,7 +4,7 @@ var isDone = false;
 var age = 10;
 //string类型
 var firstName = 'lijian';
-var message = "hello " + firstName;
+var message = "hello ".concat(firstName);
 //undefined和null是所有类型的子类型
 var u = undefined;
 var n = null;
