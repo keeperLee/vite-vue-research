@@ -1,4 +1,4 @@
 var hello = function (name) {
-    return "hello " + name;
+    return "hello ".concat(name);
 };
 hello('lijian');
