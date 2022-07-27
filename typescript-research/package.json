@@ -4,9 +4,12 @@
   "description": "",
   "main": "array-and-tuple.js",
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^0.27.2",
+    "jquery": "^3.6.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/jquery": "^3.5.14"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
