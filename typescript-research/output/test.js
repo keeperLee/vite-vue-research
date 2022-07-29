@@ -1,4 +1,3 @@
-"use strict";
 // const hello = (name:string)=>{
 //     return `hello ${name}`
 // }
@@ -13,21 +12,15 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     }
     return to.concat(ar || Array.prototype.slice.call(from));
 };
-exports.__esModule = true;
-exports.copyArray = exports.isArray = exports.isNumber = exports.isString = void 0;
-function isString(value) {
+export function isString(value) {
     return (typeof value === 'string') || (value instanceof String);
 }
-exports.isString = isString;
-function isNumber(value) {
+export function isNumber(value) {
     return (typeof value === 'number') || (value instanceof Number);
 }
-exports.isNumber = isNumber;
-function isArray(value) {
+export function isArray(value) {
     return Array.isArray(value);
 }
-exports.isArray = isArray;
-function copyArray(value) {
+export function copyArray(value) {
     return __spreadArray([], value, true);
 }
-exports.copyArray = copyArray;
